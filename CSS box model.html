@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Boxmodel</title>
+    <style>
+        /* The CSS box model is essentially a box that wraps around every HTML element. 
+        It consists of: content, padding, borders and margins. 
+        The image below illustrates the box model: 
+        Explanation of the different parts:
+
+      Content - The content of the box, where text and images appear
+      Padding - Clears an area around the content. The padding is transparent
+      Border - A border that goes around the padding and content
+    Margin - Clears an area outside the border. The margin is transparent
+        
+        */
+
+         
+        * {
+            /* The browser provides a default padding and margin to the elements so we need to reset it using this universal selector */
+
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            background-color: aqua;
+        }
+
+        .box1 {
+            color: yellow;
+            padding: 10px;
+            margin: 35px;
+            border: 2px solid blue;
+            height: 200px;
+            /* by giving the box sizing propert the css will only consider the total height including padding and border only */
+            box-sizing: border-box;
+        }
+
+        .box2 {
+            color: red;
+            padding: 10px;
+            margin: 25px;
+            border: 2px solid black;
+            height: 200px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="box model.png">
+    <div class="box box1">I am a box</div>
+    <div class="box box2">I am another box</div>
+</body>
+
+</html>

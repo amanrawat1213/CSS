@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selector  */
+        div {
+            /* background-color: red; */
+        }
+
+        /* Class Selector  */
+        .red {
+            background-color: red;
+        }
+
+        /* Id Selector */
+        #green {
+            background-color: green;
+        }
+
+        /* Child Selectors  */
+        div>p {
+            color: blue;
+            background-color: rgb(17, 9, 9);
+        }
+
+        /* Descendant Selector  */
+        div p {
+            color: blue;
+            background-color: brown;
+        }
+
+        /* Universal Selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo Selector  */
+        /* What are Pseudo-classes?
+        A pseudo-class is used to define a special state of an element.
+ 
+       For example, it can be used to:
+
+           Style an element when a user moves the mouse over it
+           Style visited and unvisited links differently
+           Style an element when it gets focus
+           Style valid/invalid/required/optional form elements */
+        a:visited {
+            color: yellow
+        }
+
+        a:link {
+            color: green;
+        }
+
+        a:active {
+            background-color: red;
+        }
+
+        a:hover {
+            background-color: yellow;
+        }
+
+
+        p:first-child {
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="one">
+        <p>I am first</p>
+        <p>I am second</p>
+    </main>
+    <div class="red">
+        I am a div
+        <article>
+
+            <p>I am a para inside div</p>
+        </article>
+    </div>
+
+    <div id="green">
+        I am another div
+    </div>
+    <a href="https://www.google.com">Go to Google</a>
+    <a href="https://www.facebook2.com">Go to Facebook</a>
+</body>
+
+</html>
