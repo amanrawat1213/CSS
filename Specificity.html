@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+        /* What is Specificity? If there are two or more CSS rules that point to the same element,
+        the selector with the highest specificity will "win",
+        and its style declaration will be applied to that HTML element. 
+        Think of specificity as a hierarchy that determines which style declaration is ultimately applied to an element.
+        
+        
+        The Cascade Algorithm
+CSS stands for Cascading Stylesheets. The cascade is the algorithm for solving conflicts where multiple CSS rules apply 
+to an HTML element. It's the reason that the text of the button styled with the above CSS will be purple.
+
+Understanding the cascade algorithm helps you understand how the browser resolves conflicts like this. 
+The cascade algorithm has 4 distinct stages.
+
+Position and order of appearance: the order in which your CSS rules appear(for eg if there are 2 same type of selector then the last
+one will override the css of written at first)
+Specificity: an algorithm that determines which CSS selector has the strongest match
+Origin: the order in which CSS appears and where it comes from, whether that is a browser style, 
+CSS from a browser extension, or your authored CSS
+Importance: some CSS rules are weighted more heavily than others, especially with the !important rule type(which will
+ override the inline)
+        
+        
+        */
+
+        /* The specificity of this selector is 1  */
+        h1 {
+            color: aqua;
+        }
+
+        /* The specificity of this selector is 10  */
+        .cpurple {
+            color: purple;
+        }
+
+        /* The specificity of this selector is 1 + 10 = 11  */
+        h1.yellow {
+            color: yellow;
+        }
+
+        /* This is an example of attribute selector. The specificity of this selector is 10 */
+        [data-x=a] {
+            color: maroon;
+        }
+
+        /* The specificity of this selector is 10  */
+        .cred {
+            color: red;
+        }
+
+        /* The specificity of this selector is 1 + 10 + 10 + 10 + 10 = 41  */
+        a.harryclass.rohan-class[href]:hover {
+            color: blueviolet;
+        }
+        /* So, the order of specificity is:
+
+Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector */
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 class="yellow cred cpurple" data-x="a">CSS Specificity</h1>
+    </div>
+</body>
+
+</html>
