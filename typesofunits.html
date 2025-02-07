@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of units</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /* root element */
+        html{
+            font-size: 12px;
+        }
+
+        .box {
+            border: 2px solid black;
+            /* the pixel is good to use if in case the website is made for a dedicated device width */
+            width: 233px;
+            /* If not then we need to use a responsive unit like vw-viwe port width*/
+            width: 100vw;
+            /* now to center the div you can give width to 80vw and margin as auto that will automatically set the div */
+            width: 80vw;
+            margin: auto;
+            background-color: aquamarine;
+            box-sizing: border-box;
+            /* height */
+            height: 10vh;
+        }
+
+        .container {
+            border: 2px solid black;
+            width: 80vw;
+            margin: 23px auto;
+            background-color: aquamarine;
+            box-sizing: border-box;
+            /* to adjust the height similarly you can use vh-view port height */
+            height: 80vh;
+            /* 1 em=16px */
+            font-size: 1em;
+            /* the paragraph tag will have this as its size */
+        }
+        /* em	Relative to the font-size of the element (2em means 2 times the size of the current font) */
+        .container p{
+            /* there will be no change in its size as it will consider equal to its parent */
+            font-size: 1em;
+            /* the font size will be twice of its parent */
+            font-size: 2em;
+            /* rem is used when we want the element to inherit the size as per root element html */
+            font-size: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        Hi i am box
+    </div>
+    <div class="container">
+        <div>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis necessitatibus quia quod iste
+                dolorem
+                voluptatem fuga quidem aspernatur. Nihil ipsa sint quae, beatae explicabo saepe impedit laboriosam magni
+                cupiditate expedita voluptates consequatur odit veritatis dolorum doloribus. Iure nemo odit dicta,
+                delectus,
+                modi reiciendis maiores ut quo adipisci libero quam laboriosam nihil voluptate natus nobis earum ad?
+            </p>
+
+
+            <div>
+            </div>
+</body>
+
+</html>
