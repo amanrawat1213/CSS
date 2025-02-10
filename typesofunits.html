@@ -10,8 +10,9 @@
             margin: 0;
             padding: 0;
         }
+
         /* root element */
-        html{
+        html {
             font-size: 12px;
         }
 
@@ -42,14 +43,22 @@
             font-size: 1em;
             /* the paragraph tag will have this as its size */
         }
+
         /* em	Relative to the font-size of the element (2em means 2 times the size of the current font) */
-        .container p{
+        .container p {
             /* there will be no change in its size as it will consider equal to its parent */
             font-size: 1em;
             /* the font size will be twice of its parent */
             font-size: 2em;
             /* rem is used when we want the element to inherit the size as per root element html */
             font-size: 2rem;
+        }
+
+        .nd {
+            border: 2px solid black;
+            margin: 33px auto;
+            background-color: rgb(7, 60, 43);
+            box-sizing: border-box;
         }
     </style>
 </head>
@@ -72,6 +81,7 @@
 
             <div>
             </div>
+
 </body>
 
 </html>
