@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        .box {
+            width: 30vw;
+            height: 30vh;
+            border: 2px solid black;
+            /* to apply a scroll bar for the overflowed content (Note:There will be a permanent scroll bar 
+            even if the content is not getting overflowed*/
+            /* overflow: scroll; */
+            /* auto value will set a scroll bar only of the  content gets overflowed otherwise not */
+            overflow: auto;
+            /* to stop the text getting wrapped in downward direction use */
+             /* white-space: nowrap; */
+             /* to apply ellipses to a text use text-overflow */
+            /* text-overflow: ellipsis; */
+           /* if i want to control individual scroll bars */
+            /* overflow-x: hidden;
+            overflow-y: scroll; */
+            /* short hand:overflow: x axis y axis; */
+            overflow: auto hidden;
+           
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        I am a good boy and I love to write Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta iure amet
+        unde voluptas nihil vero, maxime esse quis quos natus rem, earum aspernatur quasi aut ea commodi nostrum
+        voluptate! Sint rerum nostrum perferendis sapiente explicabo perspiciatis, ut magni? Aspernatur, provident
+        dolorum unde corporis doloribus rem!
+    </div>
+</body>
+
+</html>
