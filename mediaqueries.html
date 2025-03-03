@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS media query</title>
+    <style>
+        body {
+            background-color: red;
+        }
+
+        /* @media not|only mediatype and (expressions) {
+            CSS-Code;
+        } */
+        /* CSS Media Queries
+The @media rule, introduced in CSS2, made it possible to define different style rules for different media types.
+
+Media queries in CSS3 extended the CSS2 media types idea: Instead of looking for a type of device, they look at the capability of the device.
+
+Media queries can be used to check many things, such as:
+
+width and height of the viewport
+orientation of the viewport (landscape or portrait)
+resolution
+Using media queries are a popular technique for delivering a tailored style sheet to desktops, 
+laptops, tablets, and mobile phones (such as iPhone and Android phones). */
+
+        @media only screen and (max-width: 455px) {
+            body {
+
+                background-color: blue;
+            }
+
+            /* .boxes {
+                flex-direction: column;
+            } */
+        }
+
+        @media screen and (orientation: portrait) {
+            body {
+                border: 2px solid purple;
+            }
+        }
+
+
+
+
+
+        /* .boxes {
+            display: flex;
+        }
+
+        .box {
+            width: 344px;
+            height: 344px;
+            background-color: steelblue;
+            padding: 3px;
+            margin: 3px;
+        } */
+    </style>
+</head>
+
+<body>
+    <div>
+        Hey I am a red body guy!
+    </div>
+
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
