@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .container {
+            width: 80vw;
+            height: auto;
+            border: 2px solid black;
+            display: grid;
+            /* Grid Tracks
+The rows and columns of a grid is defined with the grid-template-rows and the grid-template-columns properties 
+(or the shorthand grid or grid-template properties).
+
+These define the grid tracks. A grid track is the space between two adjacent grid lines. */
+            /* dividing the grid into 2 columns of width 120px and 100px respectively */
+            grid-template-columns: 120px 100px;
+            grid-template-rows: 100px 100px 100px;
+            
+        }
+
+        .item {
+            border: 2px solid red;
+            height: 55px;
+            width: 55px;
+    
+        }
+        .item-4 {
+            grid-row: 1/2; 
+        }
+        .item-1 {
+            grid-row: 1/2; 
+            /* grid-row-start: 1;
+            grid-row-end: 2; */
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- The Grid Layout Module offers a grid-based layout system, with rows and columns.
+
+The Grid Layout Module allows developers to easily create complex web layouts.
+
+The Grid Layout Module makes it easier to design a responsive layout structure, without using float or positioning.
+
+The CSS grid properties are supported in all modern browsers. 
+
+CSS Grid Components
+A grid always consists of:
+
+a Grid Container - the parent (container) <div> element
+Grid Items - the items inside the container <div>
+-->
+</body>
+<div class="container">
+    <!-- <div class="item">1</div> -->
+    <div class="item item-1">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item item-4">4</div>
+    <!-- <div class="item">4</div> -->
+    <div class="item">5</div>
+</div>
+
+</html>
