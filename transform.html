@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin: 55px;
+            width: 100vw;
+            height: 80vh;
+            border: 2px solid purple;
+        }
+        .box {
+            height: 50px;
+            width: 50px;
+            background-color: beige;
+            border: 2px solid black;
+            /* to rotate the box at certain angle */
+            /* transform: rotate(40deg); */
+            /* rotate the box at a certain axis */
+            /* transform: rotateX(96deg); */
+            /*  to scale an element*/
+            /* transform: scale(1.6); */
+            /* we can use skew property to stretch the element */
+            /* transform: skew(10deg); */
+            transform-origin: -50% -50%;
+        }
+    </style>
+</head>
+<body>
+    <!-- The transform property applies a 2D or 3D transformation to an element. 
+     This property allows you to rotate, scale, move, skew, etc.,
+     transform: none|transform-functions|initial|inherit;
+     elements. -->
+     <div class="container">
+        <div class="box">
+            box
+        </div>
+    </div>
+</body>
+</html>
