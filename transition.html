@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+        background-color: antiquewhite;
+        width: 50vw;
+        height: 40vh;
+        
+    }
+
+    .box{
+        background-color: aquamarine;
+        width: 5vw;
+        height: 4vh;
+        /* there are 4 properties important to set for making a transition */
+        transition-property: transform;
+        transition-duration: 3s;
+        transition-timing-function: ease-in;
+        /* we can also create default function in timing function */
+        /* transition-timing-function: cubic-bezier(0.22, 0.43, 0, 0.99);  */
+        transition-delay: 1s;
+    }
+    .translate{
+        transform: translateX(10vw)  translateY(10vh) ;
+        /* if i want to apply transition to all properties i will use transition property all */
+        background-color: blue;
+    }
+    </style>
+    
+</head>
+<body>
+<!-- CSS transitions allows you to change property values smoothly, over a given duration.
+ To create a transition effect, you must specify two things:
+
+the CSS property you want to add an effect to
+the duration of the effect
+Note: If the duration part is not specified, the transition will have no effect, because the default value is 0.
+-->
+<div class="container">
+    <div class="box translate"></div>
+</div>
+</body>
+</html>
